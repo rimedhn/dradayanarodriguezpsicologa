@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="es" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRA. DAYANA RODRIGUEZ - Psicóloga General</title>
+  <link rel="icon" type="image/jpeg" href="https://github.com/rimedhn/dradayanarodriguezpsicologa/blob/main/Logo%20Psicologa.jpg?raw=true">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .section-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .lang-es { display: block; }
+        .lang-en { display: none; }
+        
+        html[lang="en"] .lang-es { display: none; }
+        html[lang="en"] .lang-en { display: block; }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full w-full overflow-auto">
+  <div class="w-full h-full"><!-- Header -->
+   <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+     <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-4"><img src="https://github.com/rimedhn/dradayanarodriguezpsicologa/blob/main/Logo%20Psicologa.jpg?raw=true" alt="Logo" class="h-16 w-16 rounded-full object-cover shadow-lg" onerror="this.src=''; this.alt='Logo no disponible'; this.style.display='none';">
+       <div>
+        <h1 class="text-xl sm:text-2xl font-bold text-purple-900" id="business-name">DRA. DAYANA RODRIGUEZ</h1>
+        <p class="text-sm text-purple-600 lang-es">PSICÓLOGA GENERAL</p>
+        <p class="text-sm text-purple-600 lang-en">GENERAL PSYCHOLOGIST</p>
+       </div>
+      </div><!-- Language Toggle --> <button id="lang-toggle" class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg hover:bg-blue-200 transition font-medium"> <span class="lang-es">🇬🇧 English</span> <span class="lang-en">🇪🇸 Español</span> </button>
+     </div><!-- Navigation -->
+     <nav class="mt-4 flex flex-wrap gap-4 justify-center"><a href="#inicio" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-es">Inicio</a> <a href="#inicio" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-en">Home</a> <a href="#sobre-mi" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-es">Sobre Mí</a> <a href="#sobre-mi" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-en">About Me</a> <a href="#servicios" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-es">Servicios</a> <a href="#servicios" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-en">Services</a> <a href="#especialidades" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-es">Especialidades</a> <a href="#especialidades" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-en">Specialties</a> <a href="#contacto" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-es">Contacto</a> <a href="#contacto" class="nav-link text-blue-700 hover:text-blue-900 font-medium lang-en">Contact</a>
+     </nav>
+    </div>
+   </header><!-- Hero Section -->
+   <section id="inicio" class="gradient-bg text-white py-20 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+     <h2 class="text-4xl sm:text-5xl font-bold mb-6" id="hero-heading"><span class="lang-es">Especialista en Psicología General</span> <span class="lang-en">General Psychology Specialist</span></h2>
+     <p class="text-xl sm:text-2xl mb-8 opacity-90" id="hero-subtitle"><span class="lang-es">Apoyo profesional para tu bienestar mental y emocional</span> <span class="lang-en">Professional support for your mental and emotional well-being</span></p>
+     <div class="flex flex-wrap gap-4 justify-center"><a href="#contacto" class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition shadow-lg"> <span class="lang-es">Agenda tu Consulta</span> <span class="lang-en">Schedule Your Appointment</span> </a> <a href="https://wa.me/50488472733" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition shadow-lg"> <span class="lang-es">💬 WhatsApp</span> <span class="lang-en">💬 WhatsApp</span> </a>
+     </div><!-- Modalidades de atención -->
+     <div class="mt-12 flex flex-wrap gap-6 justify-center">
+      <div class="bg-white bg-opacity-20 backdrop-blur-sm px-8 py-4 rounded-lg">
+       <p class="font-semibold text-lg"><span class="lang-es">💻 Atención 100% Online</span> <span class="lang-en">💻 100% Online Care</span></p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Sobre Mí Section -->
+   <section id="sobre-mi" class="py-20 px-4 bg-gray-50 section-reveal">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center text-blue-900 mb-12"><span class="lang-es">Sobre Mí</span> <span class="lang-en">About Me</span></h2>
+     <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div><img src="https://github.com/rimedhn/dradayanarodriguezpsicologa/blob/main/Terapia%20emocional.jpg?raw=true" alt="Psicóloga profesional" class="w-full h-80 object-cover rounded-2xl shadow-xl" onerror="this.src=''; this.alt='Imagen no disponible'; this.style.display='none';">
+      </div>
+      <div class="space-y-6">
+       <p class="text-lg text-gray-700 leading-relaxed lang-es">Como <strong>Psicóloga General</strong>, cubro varias ramas fundamentales de la psicología, brindando atención integral y especializada a cada uno de mis pacientes. Mi compromiso es proporcionar un espacio seguro y profesional donde puedas encontrar el apoyo que necesitas.</p>
+       <p class="text-lg text-gray-700 leading-relaxed lang-en">As a <strong>General Psychologist</strong>, I cover several fundamental branches of psychology, providing comprehensive and specialized care to each of my patients. My commitment is to provide a safe and professional space where you can find the support you need.</p>
+       <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
+        <p class="text-blue-900 font-semibold lang-es">"Tu bienestar mental es mi prioridad. Trabajemos juntos hacia una vida más equilibrada y plena."</p>
+        <p class="text-blue-900 font-semibold lang-en">"Your mental well-being is my priority. Let's work together towards a more balanced and fulfilling life."</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Servicios Section -->
+   <section id="servicios" class="py-20 px-4 bg-white section-reveal">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center text-blue-900 mb-4"><span class="lang-es">Mis Servicios</span> <span class="lang-en">My Services</span></h2>
+     <p class="text-center text-gray-600 mb-12 text-lg"><span class="lang-es">Atención profesional en diversas áreas de la psicología</span> <span class="lang-en">Professional care in various areas of psychology</span></p>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Servicio 1 -->
+      <div class="service-card bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg border border-blue-100">
+       <div class="text-5xl mb-4">
+        🧠
+       </div>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-es">Psicología Clínica</h3>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-en">Clinical Psychology</h3>
+       <p class="text-gray-700 lang-es">Diagnóstico y tratamiento de trastornos mentales y emocionales con enfoque profesional.</p>
+       <p class="text-gray-700 lang-en">Diagnosis and treatment of mental and emotional disorders with a professional approach.</p>
+      </div><!-- Servicio 2 -->
+      <div class="service-card bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-lg border border-cyan-100">
+       <div class="text-5xl mb-4">
+        👥
+       </div>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-es">Psicología Social</h3>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-en">Social Psychology</h3>
+       <p class="text-gray-700 lang-es">Análisis de la interacción humana, dinámicas de grupos y relaciones interpersonales.</p>
+       <p class="text-gray-700 lang-en">Analysis of human interaction, group dynamics, and interpersonal relationships.</p>
+      </div><!-- Servicio 3 -->
+      <div class="service-card bg-gradient-to-br from-sky-50 to-white p-6 rounded-xl shadow-lg border border-sky-100">
+       <div class="text-5xl mb-4">
+        🌱
+       </div>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-es">Psicología del Desarrollo</h3>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-en">Developmental Psychology</h3>
+       <p class="text-gray-700 lang-es">Acompañamiento en los cambios y etapas del desarrollo a lo largo de la vida.</p>
+       <p class="text-gray-700 lang-en">Support through changes and developmental stages throughout life.</p>
+      </div><!-- Servicio 4 -->
+      <div class="service-card bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl shadow-lg border border-indigo-100">
+       <div class="text-5xl mb-4">
+        📚
+       </div>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-es">Psicología Educativa</h3>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-en">Educational Psychology</h3>
+       <p class="text-gray-700 lang-es">Mejora de procesos de enseñanza-aprendizaje y orientación académica.</p>
+       <p class="text-gray-700 lang-en">Improvement of teaching-learning processes and academic guidance.</p>
+      </div><!-- Servicio 5 -->
+      <div class="service-card bg-gradient-to-br from-blue-100 to-white p-6 rounded-xl shadow-lg border border-blue-200">
+       <div class="text-5xl mb-4">
+        💼
+       </div>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-es">Psicología Organizacional</h3>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-en">Organizational Psychology</h3>
+       <p class="text-gray-700 lang-es">Optimización de la conducta laboral y clima organizacional.</p>
+       <p class="text-gray-700 lang-en">Optimization of work behavior and organizational climate.</p>
+      </div><!-- Servicio 6 -->
+      <div class="service-card bg-gradient-to-br from-teal-50 to-white p-6 rounded-xl shadow-lg border border-teal-100">
+       <div class="text-5xl mb-4">
+        🏃
+       </div>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-es">Psicología Deportiva</h3>
+       <h3 class="text-xl font-bold text-blue-900 mb-3 lang-en">Sports Psychology</h3>
+       <p class="text-gray-700 lang-es">Mejora del rendimiento y bienestar mental de atletas.</p>
+       <p class="text-gray-700 lang-en">Enhancement of athletes' performance and mental well-being.</p>
+      </div>
+     </div><!-- Imagen de sesión terapia online -->
+     <div class="mt-16"><img src="https://github.com/rimedhn/dradayanarodriguezpsicologa/blob/main/Sesion%20de%20terapia.png?raw=true" alt="Sesión de terapia online" class="w-full h-80 object-cover rounded-2xl shadow-xl" onerror="this.style.display='none';">
+     </div>
+    </div>
+   </section><!-- Especialidades Section -->
+   <section id="especialidades" class="py-20 px-4 bg-gradient-to-br from-blue-50 to-cyan-50 section-reveal">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center text-blue-900 mb-12"><span class="lang-es">Especialidades Profesionales</span> <span class="lang-en">Professional Specialties</span></h2>
+     <div class="grid md:grid-cols-2 gap-8"><!-- Neuropsicología -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl">
+       <div class="flex items-start space-x-4">
+        <div class="text-5xl">
+         🧬
+        </div>
+        <div>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-es">Neuropsicología</h3>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-en">Neuropsychology</h3>
+         <p class="text-gray-700 lang-es">Estudio especializado de la relación entre el cerebro y la conducta, evaluando funciones cognitivas y neurológicas.</p>
+         <p class="text-gray-700 lang-en">Specialized study of the relationship between brain and behavior, evaluating cognitive and neurological functions.</p>
+        </div>
+       </div>
+      </div><!-- Psicología de la Salud -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl">
+       <div class="flex items-start space-x-4">
+        <div class="text-5xl">
+         ❤️
+        </div>
+        <div>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-es">Psicología de la Salud</h3>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-en">Health Psychology</h3>
+         <p class="text-gray-700 lang-es">Prevención y tratamiento de enfermedades desde una perspectiva psicológica integral.</p>
+         <p class="text-gray-700 lang-en">Prevention and treatment of diseases from a comprehensive psychological perspective.</p>
+        </div>
+       </div>
+      </div><!-- Primeros Auxilios Psicológicos -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl">
+       <div class="flex items-start space-x-4">
+        <div class="text-5xl">
+         🚑
+        </div>
+        <div>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-es">Primeros Auxilios Psicológicos</h3>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-en">Psychological First Aid</h3>
+         <p class="text-gray-700 lang-es">Intervención inmediata y apoyo para personas en crisis, estabilización emocional tras eventos traumáticos.</p>
+         <p class="text-gray-700 lang-en">Immediate intervention and support for people in crisis, emotional stabilization after traumatic events.</p>
+        </div>
+       </div>
+      </div><!-- Manejo Psicológico Paliativo -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl">
+       <div class="flex items-start space-x-4">
+        <div class="text-5xl">
+         🕊️
+        </div>
+        <div>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-es">Manejo Psicológico Paliativo</h3>
+         <h3 class="text-2xl font-bold text-blue-900 mb-3 lang-en">Palliative Psychological Care</h3>
+         <p class="text-gray-700 lang-es">Apoyo emocional a pacientes en etapa terminal y sus familias, abordaje del proceso de duelo y aspectos espirituales.</p>
+         <p class="text-gray-700 lang-en">Emotional support for terminal patients and their families, grief process management, and spiritual aspects.</p>
+        </div>
+       </div>
+      </div>
+     </div><!-- Imagen de terapia de pareja -->
+     <div class="mt-12"><img src="https://github.com/rimedhn/dradayanarodriguezpsicologa/blob/main/Sesion%20de%20parejas.jpg?raw=true" alt="Sesión de terapia de pareja" class="w-full h-96 object-cover rounded-2xl shadow-xl" onerror="this.style.display='none';">
+     </div><!-- Terapias Específicas -->
+     <div class="mt-12 bg-white p-8 rounded-2xl shadow-xl">
+      <h3 class="text-2xl font-bold text-blue-900 mb-6 text-center"><span class="lang-es">Terapias Especializadas</span> <span class="lang-en">Specialized Therapies</span></h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div class="text-center p-4 bg-blue-50 rounded-lg">
+        <div class="text-3xl mb-2">
+         😰
+        </div>
+        <p class="font-semibold text-blue-900 lang-es">Trastornos de Ansiedad</p>
+        <p class="font-semibold text-blue-900 lang-en">Anxiety Disorders</p>
+       </div>
+       <div class="text-center p-4 bg-cyan-50 rounded-lg">
+        <div class="text-3xl mb-2">
+         😔
+        </div>
+        <p class="font-semibold text-blue-900 lang-es">Depresión</p>
+        <p class="font-semibold text-blue-900 lang-en">Depression</p>
+       </div>
+       <div class="text-center p-4 bg-sky-50 rounded-lg">
+        <div class="text-3xl mb-2">
+         🔄
+        </div>
+        <p class="font-semibold text-blue-900 lang-es">Trastornos Obsesivo-Compulsivos</p>
+        <p class="font-semibold text-blue-900 lang-en">Obsessive-Compulsive Disorders</p>
+       </div>
+       <div class="text-center p-4 bg-indigo-50 rounded-lg">
+        <div class="text-3xl mb-2">
+         💑
+        </div>
+        <p class="font-semibold text-blue-900 lang-es">Terapia de Parejas</p>
+        <p class="font-semibold text-blue-900 lang-en">Couples Therapy</p>
+       </div>
+       <div class="text-center p-4 bg-teal-50 rounded-lg">
+        <div class="text-3xl mb-2">
+         👨‍👩‍👧‍👦
+        </div>
+        <p class="font-semibold text-blue-900 lang-es">Problemas Familiares</p>
+        <p class="font-semibold text-blue-900 lang-en">Family Issues</p>
+       </div>
+       <div class="text-center p-4 bg-blue-100 rounded-lg">
+        <div class="text-3xl mb-2">
+         🌈
+        </div>
+        <p class="font-semibold text-blue-900 lang-es">Orientación Sexual</p>
+        <p class="font-semibold text-blue-900 lang-en">Sexual Orientation</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contacto Section -->
+   <section id="contacto" class="py-20 px-4 bg-white section-reveal">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center text-blue-900 mb-4"><span class="lang-es">Contacto</span> <span class="lang-en">Contact</span></h2>
+     <p class="text-center text-gray-600 mb-12 text-lg"><span class="lang-es">Agenda tu consulta online hoy mismo</span> <span class="lang-en">Schedule your online consultation today</span></p>
+     <div class="grid md:grid-cols-2 gap-12"><!-- Información de Contacto -->
+      <div class="space-y-6">
+       <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-bold text-blue-900 mb-4"><span class="lang-es">Información de Contacto</span> <span class="lang-en">Contact Information</span></h3>
+        <div class="space-y-4">
+         <div class="flex items-center space-x-3">
+          <div class="text-2xl">
+           📱
+          </div>
+          <div>
+           <p class="text-sm text-gray-600">WhatsApp</p>
+           <p class="font-semibold text-blue-900" id="whatsapp-display">+504 8847-2733</p>
+          </div>
+         </div>
+         <div class="flex items-center space-x-3">
+          <div class="text-2xl">
+           ☎️
+          </div>
+          <div>
+           <p class="text-sm text-gray-600 lang-es">Teléfono</p>
+           <p class="text-sm text-gray-600 lang-en">Phone</p>
+           <p class="font-semibold text-blue-900" id="phone-display">864 309-2885</p>
+          </div>
+         </div>
+         <div class="flex items-center space-x-3">
+          <div class="text-2xl">
+           📧
+          </div>
+          <div>
+           <p class="text-sm text-gray-600">Email</p>
+           <p class="font-semibold text-blue-900 break-all" id="email-display">dayanarz77esqui80@gmail.com</p>
+          </div>
+         </div>
+        </div>
+       </div><!-- Imagen de consulta online -->
+       <div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&amp;h=400&amp;fit=crop" alt="Consulta online" class="w-full h-64 object-cover" onerror="this.style.display='none';">
+       </div>
+      </div><!-- Formulario de Contacto -->
+      <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-xl">
+       <h3 class="text-2xl font-bold text-blue-900 mb-6"><span class="lang-es">Enviar Mensaje</span> <span class="lang-en">Send Message</span></h3>
+       <form id="contact-form" class="space-y-4">
+        <div><label for="name" class="block text-sm font-medium text-gray-700 mb-2 lang-es">Nombre Completo</label> <label for="name" class="block text-sm font-medium text-gray-700 mb-2 lang-en">Full Name</label> <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
+        </div>
+        <div><label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
+        </div>
+        <div><label for="phone" class="block text-sm font-medium text-gray-700 mb-2 lang-es">Teléfono</label> <label for="phone" class="block text-sm font-medium text-gray-700 mb-2 lang-en">Phone</label> <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
+        </div>
+        <div><label for="message" class="block text-sm font-medium text-gray-700 mb-2 lang-es">Mensaje</label> <label for="message" class="block text-sm font-medium text-gray-700 mb-2 lang-en">Message</label> <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition resize-none"></textarea>
+        </div><button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-900 transition shadow-lg"> <span class="lang-es">📱 Enviar por WhatsApp</span> <span class="lang-en">📱 Send via WhatsApp</span> </button>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+     <div class="grid md:grid-cols-3 gap-8 mb-8"><!-- Logo y Nombre -->
+      <div class="text-center md:text-left"><img src="https://github.com/rimedhn/dradayanarodriguezpsicologa/blob/main/Logo%20Psicologa.jpg?raw=true" alt="Logo" class="h-20 w-20 rounded-full mx-auto md:mx-0 mb-4 shadow-xl" onerror="this.style.display='none';">
+       <h3 class="text-xl font-bold mb-2">DRA. DAYANA RODRIGUEZ</h3>
+       <p class="opacity-90 lang-es">Psicóloga General</p>
+       <p class="opacity-90 lang-en">General Psychologist</p>
+      </div><!-- Datos de Contacto -->
+      <div class="text-center md:text-left">
+       <h4 class="font-bold mb-4 text-lg"><span class="lang-es">Contacto</span> <span class="lang-en">Contact</span></h4>
+       <div class="space-y-2 opacity-90">
+        <p>📱 +504 8847-2733</p>
+        <p>☎️ 864 309-2885</p>
+        <p class="break-all">📧 dayanarz77esqui80@gmail.com</p>
+       </div>
+      </div><!-- Redes Sociales -->
+      <div class="text-center md:text-left">
+       <h4 class="font-bold mb-4 text-lg"><span class="lang-es">Síguenos en Redes Sociales</span> <span class="lang-en">Follow Us on Social Media</span></h4>
+       <p class="mb-4 opacity-90 lang-es">Mantente conectado con nosotros</p>
+       <p class="mb-4 opacity-90 lang-en">Stay connected with us</p>
+       <div id="social-links" class="flex flex-wrap gap-3 justify-center md:justify-start"><!-- Los enlaces se añadirán dinámicamente si tienen URL -->
+       </div>
+      </div>
+     </div>
+     <div class="border-t border-blue-700 pt-8 text-center">
+      <p class="opacity-90 mb-2 lang-es">© 2024 Dra. Dayana Rodriguez - Todos los derechos reservados</p>
+      <p class="opacity-90 mb-2 lang-en">© 2024 Dra. Dayana Rodriguez - All rights reserved</p>
+      <p class="text-sm opacity-75"><span class="lang-es">Desarrollado por</span> <span class="lang-en">Developed by</span> <a href="https://www.rimeddigital.com" target="_blank" rel="noopener noreferrer" class="font-semibold hover:text-blue-200 transition">Rimed Digital</a></p>
+      <p class="text-sm opacity-75 mt-1">📧 gerencia@rimeddigital.com | 📱 +504 9359-3126</p>
+     </div>
+    </div>
+   </footer><!-- Botón Flotante de WhatsApp --> <a href="https://wa.me/50488472733" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="WhatsApp">
+    <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition">
+     <svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+     </svg>
+    </div></a>
+  </div>
+  <script>
+        const defaultConfig = {
+            business_name: "DRA. DAYANA RODRIGUEZ",
+            hero_heading_es: "Especialista en Psicología General",
+            hero_heading_en: "General Psychology Specialist",
+            hero_subtitle_es: "Apoyo profesional para tu bienestar mental y emocional",
+            hero_subtitle_en: "Professional support for your mental and emotional well-being",
+            whatsapp_number: "+504 8847-2733",
+            phone_number: "864 309-2885",
+            email_address: "dayanarz77esqui80@gmail.com",
+            background_color: "#f0f9ff",
+            primary_color: "#1e40af",
+            text_color: "#1e3a8a",
+            accent_color: "#0284c7",
+            secondary_color: "#ffffff"
+        };
+
+        async function onConfigChange(config) {
+            const businessName = config.business_name || defaultConfig.business_name;
+            const heroHeadingEs = config.hero_heading_es || defaultConfig.hero_heading_es;
+            const heroHeadingEn = config.hero_heading_en || defaultConfig.hero_heading_en;
+            const heroSubtitleEs = config.hero_subtitle_es || defaultConfig.hero_subtitle_es;
+            const heroSubtitleEn = config.hero_subtitle_en || defaultConfig.hero_subtitle_en;
+            const whatsappNumber = config.whatsapp_number || defaultConfig.whatsapp_number;
+            const phoneNumber = config.phone_number || defaultConfig.phone_number;
+            const emailAddress = config.email_address || defaultConfig.email_address;
+            
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+            const primaryColor = config.primary_color || defaultConfig.primary_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+            const accentColor = config.accent_color || defaultConfig.accent_color;
+            const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
+            
+            const businessNameEl = document.getElementById('business-name');
+            if (businessNameEl) businessNameEl.textContent = businessName;
+            
+            const heroHeadingEls = document.querySelectorAll('#hero-heading .lang-es');
+            heroHeadingEls.forEach(el => el.textContent = heroHeadingEs);
+            
+            const heroHeadingEnEls = document.querySelectorAll('#hero-heading .lang-en');
+            heroHeadingEnEls.forEach(el => el.textContent = heroHeadingEn);
+            
+            const heroSubtitleEls = document.querySelectorAll('#hero-subtitle .lang-es');
+            heroSubtitleEls.forEach(el => el.textContent = heroSubtitleEs);
+            
+            const heroSubtitleEnEls = document.querySelectorAll('#hero-subtitle .lang-en');
+            heroSubtitleEnEls.forEach(el => el.textContent = heroSubtitleEn);
+            
+            const whatsappDisplay = document.getElementById('whatsapp-display');
+            if (whatsappDisplay) whatsappDisplay.textContent = whatsappNumber;
+            
+            const phoneDisplay = document.getElementById('phone-display');
+            if (phoneDisplay) phoneDisplay.textContent = phoneNumber;
+            
+            const emailDisplay = document.getElementById('email-display');
+            if (emailDisplay) emailDisplay.textContent = emailAddress;
+            
+            document.body.style.backgroundColor = backgroundColor;
+            
+            const gradientElements = document.querySelectorAll('.gradient-bg');
+            gradientElements.forEach(el => {
+                el.style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${accentColor} 100%)`;
+            });
+            
+            const textElements = document.querySelectorAll('h1, h2, h3, .text-purple-900');
+            textElements.forEach(el => {
+                el.style.color = textColor;
+            });
+            
+            const cardElements = document.querySelectorAll('.service-card');
+            cardElements.forEach(el => {
+                el.style.backgroundColor = secondaryColor;
+            });
+        }
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities: (config) => ({
+                    recolorables: [
+                        {
+                            get: () => config.background_color || defaultConfig.background_color,
+                            set: (value) => {
+                                config.background_color = value;
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.secondary_color || defaultConfig.secondary_color,
+                            set: (value) => {
+                                config.secondary_color = value;
+                                window.elementSdk.setConfig({ secondary_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.text_color || defaultConfig.text_color,
+                            set: (value) => {
+                                config.text_color = value;
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.primary_color || defaultConfig.primary_color,
+                            set: (value) => {
+                                config.primary_color = value;
+                                window.elementSdk.setConfig({ primary_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.accent_color || defaultConfig.accent_color,
+                            set: (value) => {
+                                config.accent_color = value;
+                                window.elementSdk.setConfig({ accent_color: value });
+                            }
+                        }
+                    ],
+                    borderables: [],
+                    fontEditable: undefined,
+                    fontSizeable: undefined
+                }),
+                mapToEditPanelValues: (config) => new Map([
+                    ["business_name", config.business_name || defaultConfig.business_name],
+                    ["hero_heading", config.hero_heading_es || defaultConfig.hero_heading_es],
+                    ["hero_subtitle", config.hero_subtitle_es || defaultConfig.hero_subtitle_es],
+                    ["whatsapp_number", config.whatsapp_number || defaultConfig.whatsapp_number],
+                    ["phone_number", config.phone_number || defaultConfig.phone_number],
+                    ["email_address", config.email_address || defaultConfig.email_address]
+                ])
+            });
+        }
+
+        // Language toggle
+        const langToggle = document.getElementById('lang-toggle');
+        langToggle.addEventListener('click', () => {
+            const html = document.documentElement;
+            const currentLang = html.getAttribute('lang');
+            html.setAttribute('lang', currentLang === 'es' ? 'en' : 'es');
+        });
+
+        // Form submission to WhatsApp
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            const currentLang = document.documentElement.getAttribute('lang');
+            const greeting = currentLang === 'es' ? 'Hola, mi nombre es' : 'Hello, my name is';
+            const contactInfo = currentLang === 'es' ? 'Mis datos de contacto son' : 'My contact information is';
+            const messageLabel = currentLang === 'es' ? 'Mi consulta es' : 'My inquiry is';
+            
+            const whatsappMessage = `${greeting} ${name}.\n\n${contactInfo}:\n📧 Email: ${email}\n📱 ${currentLang === 'es' ? 'Teléfono' : 'Phone'}: ${phone}\n\n${messageLabel}:\n${message}`;
+            
+            const whatsappUrl = `https://wa.me/50488472733?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+            
+            contactForm.reset();
+        });
+
+        // Social media links (only show if URL is provided)
+        const socialLinks = [
+            { name: 'Facebook', url: '', icon: '📘' },
+            { name: 'Instagram', url: '', icon: '📷' },
+            { name: 'TikTok', url: '', icon: '🎵' }
+        ];
+
+        const socialLinksContainer = document.getElementById('social-links');
+        socialLinks.forEach(social => {
+            if (social.url) {
+                const link = document.createElement('a');
+                link.href = social.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition flex items-center space-x-2';
+                link.innerHTML = `<span>${social.icon}</span><span>${social.name}</span>`;
+                socialLinksContainer.appendChild(link);
+            }
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ad155cbf42f31c0',t:'MTc2NTU4NTY0MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
